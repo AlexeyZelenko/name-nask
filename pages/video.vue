@@ -5,7 +5,7 @@
       <v-container>
         <v-row>
           <v-col
-            v-for="n in 3"
+            v-for="n in 6"
             :key="n"
             cols="12"
             md="4"
@@ -13,6 +13,7 @@
             <v-item>
               <div
                 class="display-3 flex-grow-1 text-center"
+                text-center
               >
                 <v-card
                   class="mx-auto"
@@ -38,10 +39,10 @@
                     </div>
                   </vue-plyr>
 
-                  <v-card-title text-center>NASK - Holy Night</v-card-title>
-                  <v-card-subtitle class="pb-0">
-                    NASK
-                  </v-card-subtitle>
+                  <v-card-title >NASK - Holy Night</v-card-title>
+<!--                  <v-card-subtitle class="pb-0">-->
+<!--                    NASK-->
+<!--                  </v-card-subtitle>-->
 
 <!--                  <v-card-text class="text&#45;&#45;primary">-->
 <!--                    <div>Whitehaven Beach</div>-->
@@ -50,19 +51,13 @@
 <!--                  </v-card-text>-->
 
                   <v-card-actions>
-                    <v-btn
-                      color="orange"
-                      text
-                    >
-                      Share
-                    </v-btn>
+<!--                    <v-btn-->
+<!--                      color="orange"-->
+<!--                      text-->
+<!--                    >-->
+<!--                      Share-->
+<!--                    </v-btn>-->
 
-                    <v-btn
-                      color="orange"
-                      text
-                    >
-                      Explore
-                    </v-btn>
                   </v-card-actions>
                 </v-card>
               </div>
