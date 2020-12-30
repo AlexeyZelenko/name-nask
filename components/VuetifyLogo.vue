@@ -1,9 +1,17 @@
 <template>
-  <img
-    class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="/vuetify-logo.svg"
-  >
+  <div>
+<!--    <img-->
+<!--      class="VuetifyLogo"-->
+<!--      alt="Vuetify Logo"-->
+<!--      src="/vuetify-logo.svg"-->
+<!--    >-->
+    <h1
+      class="VuetifyLogo"
+      style="color: yellow; font-size: 90px"
+    >
+      NASK
+    </h1>
+  </div>
 </template>
 
 <style>

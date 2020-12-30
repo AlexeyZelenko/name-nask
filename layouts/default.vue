@@ -1,6 +1,7 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
+      style="background-color: #263238"
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -25,6 +26,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      style="background-color: #263238"
       :clipped-left="clipped"
       fixed
       app
@@ -57,12 +59,14 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-main>
+    <v-main
+      class="cover">
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
     <v-navigation-drawer
+      style="background-color: #37474f"
       v-model="rightDrawer"
       :right="right"
       temporary
@@ -80,6 +84,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer
+      style="background-color: #263238"
       :absolute="!fixed"
       app
     >
@@ -102,12 +107,12 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-bookmark-music',
           title: 'Audio',
           to: '/inspire'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-video',
           title: 'Video',
           to: '/video'
         }
@@ -120,3 +125,17 @@ export default {
   }
 }
 </script>
+
+<style>
+  .cover {
+    background-image: url("../static/cover1.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 250px;
+    text-align: center;
+    clear: both;
+  }
+</style>
