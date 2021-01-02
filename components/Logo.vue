@@ -1,10 +1,6 @@
 <template>
-  <div
-    class="text-center"
-    style="width: 200px"
-  >
+  <div>
     <v-btn
-      style="padding: 40px;"
       class="ma-8"
       outlined
       color="yellow"

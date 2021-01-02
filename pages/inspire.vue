@@ -14,9 +14,9 @@
                 color="#385F73"
                 dark
               >
-                <v-card-title class="headline">
-                  Музыка без ограничений
-                </v-card-title>
+<!--                <v-card-title class="headline">-->
+<!--                  Музыка без ограничений-->
+<!--                </v-card-title>-->
 
                 <v-card-subtitle>Слушайте треки в любое время и в любом месте.</v-card-subtitle>
 
@@ -40,30 +40,6 @@
                     ></v-card-title>
 
                     <v-card-subtitle v-text="item.artist"></v-card-subtitle>
-
-<!--                    <v-card-actions>-->
-<!--                      <v-btn-->
-<!--                        v-if="item.artist === 'Ellie Goulding'"-->
-<!--                        class="ml-2 mt-3"-->
-<!--                        fab-->
-<!--                        icon-->
-<!--                        height="40px"-->
-<!--                        right-->
-<!--                        width="40px"-->
-<!--                      >-->
-<!--                        <v-icon>mdi-play</v-icon>-->
-<!--                      </v-btn>-->
-
-<!--                      <v-btn-->
-<!--                        v-else-->
-<!--                        class="ml-2 mt-5"-->
-<!--                        outlined-->
-<!--                        rounded-->
-<!--                        small-->
-<!--                      >-->
-<!--                        START-->
-<!--                      </v-btn>-->
-<!--                    </v-card-actions>-->
                   </div>
 
                   <v-avatar
