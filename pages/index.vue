@@ -10,7 +10,6 @@
           height="300px"
           src="https://drive.google.com/uc?export=view&id=1_2IhyppaWsySdwogIXaf0MwGEHbVlOfH"
         >
-<!--          <v-card-title>NASK</v-card-title>-->
           <v-btn
             class="ma-2"
             outlined

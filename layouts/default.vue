@@ -1,8 +1,8 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      style="background-color: #263238"
       v-model="drawer"
+      style="background-color: #263238"
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
@@ -59,15 +59,14 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-main
-      class="cover">
+    <v-main class="cover">
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
     <v-navigation-drawer
-      style="background-color: #37474f"
       v-model="rightDrawer"
+      style="background-color: #37474f"
       :right="right"
       temporary
       fixed

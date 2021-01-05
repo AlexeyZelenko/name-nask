@@ -1,12 +1,10 @@
 <template>
   <div>
-
     <template>
       <v-card
         max-width="400"
         class="mx-auto"
       >
-
         <v-container>
           <v-row dense>
             <v-col cols="12">
@@ -14,12 +12,9 @@
                 color="#385F73"
                 dark
               >
-<!--                <v-card-title class="headline">-->
-<!--                  Музыка без ограничений-->
-<!--                </v-card-title>-->
-
-                <v-card-subtitle>Слушайте треки в любое время и в любом месте.</v-card-subtitle>
-
+                <v-card-subtitle>
+                  Слушайте треки в любое время и в любом месте.
+                </v-card-subtitle>
               </v-card>
             </v-col>
 
@@ -37,9 +32,9 @@
                     <v-card-title
                       class="headline"
                       v-text="item.title"
-                    ></v-card-title>
+                    />
 
-                    <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+                    <v-card-subtitle v-text="item.artist" />
                   </div>
 
                   <v-avatar
@@ -47,7 +42,7 @@
                     size="125"
                     tile
                   >
-                    <v-img :src="item.src"></v-img>
+                    <v-img :src="item.src" />
                   </v-avatar>
                 </div>
                 <!-- audio element -->
@@ -57,10 +52,6 @@
                       :src="item.treck"
                       type="audio/mp3"
                     />
-<!--                    <source-->
-<!--                      src="/path/to/audio.ogg"-->
-<!--                      type="audio/ogg"-->
-<!--                    />-->
                   </audio>
                 </vue-plyr>
               </v-card>
@@ -69,7 +60,6 @@
         </v-container>
       </v-card>
     </template>
-
   </div>
 </template>
 
