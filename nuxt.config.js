@@ -40,6 +40,32 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    [
+      'vue-sweetalert2/nuxt',
+      {
+        confirmButtonColor: '#41b882',
+        cancelButtonColor: '#ff7674'
+      }
+    ],
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBc7u10MhozydZgZBd7NxcE6eD30HryL_U',
+          authDomain: 'nusk-9e136.firebaseapp.com',
+          projectId: 'nusk-9e136',
+          storageBucket: 'nusk-9e136.appspot.com',
+          messagingSenderId: '364628197447',
+          appId: '1:364628197447:web:a945a1b2198600ec81f162'
+        },
+        services: {
+          database: true,
+          storage: true,
+          firestore: true,
+          auth: true // Just as example. Can be any other service.
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)

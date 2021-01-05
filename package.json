@@ -11,8 +11,12 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@nuxtjs/firebase": "^6.1.1",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "firebase": "^7.21.1",
+    "nuxt": "^2.14.6",
+    "nuxt-sweetalert2": "^1.0.0",
+    "vue-sweetalert2": "^4.1.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
