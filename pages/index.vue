@@ -8,7 +8,7 @@
         <v-img
           class="white--text align-end"
           height="300px"
-          src="https://drive.google.com/uc?export=view&id=1_2IhyppaWsySdwogIXaf0MwGEHbVlOfH"
+          :src="Cover"
         >
           <v-btn
             class="ma-2"
@@ -36,6 +36,18 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  data: () => ({
+    arrayCover: [
+      'https://drive.google.com/uc?export=view&id=1_2IhyppaWsySdwogIXaf0MwGEHbVlOfH',
+      'https://drive.google.com/uc?export=view&id=147FdQhU3A97uu7rbiTOieNZTm9Yeiy2Q',
+      'https://drive.google.com/uc?export=view&id=1XHYdN2q5KsKe6DLUsfTEb6bCnl6Wl5qB'
+    ]
+  }),
+  computed: {
+    Cover () {
+      return this.arrayCover[Math.floor(Math.random() * this.arrayCover.length)]
+    }
   }
 }
 </script>
