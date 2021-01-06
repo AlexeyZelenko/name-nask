@@ -13,7 +13,7 @@
                 dark
               >
                 <v-card-subtitle>
-                  Слушайте треки в любое время и в любом месте.
+                  Listen to tracks anytime, anywhere.
                 </v-card-subtitle>
               </v-card>
             </v-col>
@@ -79,7 +79,7 @@ export default {
         src: 'https://drive.google.com/uc?export=view&id=1s31H2jopuxpD3mLUK6SVNjDsm2rcS-Zl',
         title: 'Mom\'s prayer',
         artist: 'NASK',
-        treck: ''
+        treck: '/Prayer.mp3'
       }
     ]
   })

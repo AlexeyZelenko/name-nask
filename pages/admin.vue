@@ -2,13 +2,12 @@
   <div>
     <v-col cols="12">
       <v-file-input
-        accept="image/png, image/jpeg, image/bmp"
+        accept="audio/mp3"
         color="deep-purple accent-4"
         counter
-        label="Загрузка фотографий"
         multiple
-        placeholder="Выберите фото"
-        prepend-icon="mdi-camera"
+        placeholder="Выберите файл"
+        prepend-icon="mdi-bookmark-music"
         v-model="File"
 
       >
