@@ -77,7 +77,7 @@ export default {
       {
         color: '#091704',
         src: 'https://drive.google.com/uc?export=view&id=1s31H2jopuxpD3mLUK6SVNjDsm2rcS-Zl',
-        title: 'Mom\'s prayer',
+        title: 'Pray to God',
         artist: 'NASK',
         treck: '/Prayer.mp3'
       }
