@@ -68,7 +68,13 @@ export default {
           id: 2,
           title: 'NASK - Pray to God',
           linkIdYoutube: '0eqMMd-09Jc',
-          linkIdVimeo: '496361462'
+          linkIdVimeo: ''
+        },
+        {
+          id: 3,
+          title: 'NASK - Psalm 152',
+          linkIdYoutube: 'vnFSu_rcxUs',
+          linkIdVimeo: ''
         }
       ]
     }

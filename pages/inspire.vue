@@ -80,6 +80,13 @@ export default {
         title: 'Pray to God',
         artist: 'NASK',
         treck: '/Prayer.mp3'
+      },
+      {
+        color: '#9018cc',
+        src: 'https://drive.google.com/uc?export=view&id=1XHYdN2q5KsKe6DLUsfTEb6bCnl6Wl5qB',
+        title: 'Psalm 152',
+        artist: 'NASK',
+        treck: '/nask3.mp3'
       }
     ]
   })
