@@ -72,8 +72,20 @@ export default {
         },
         {
           id: 3,
-          title: 'NASK - Psalm 152',
+          title: 'NASK - Psalm 152(субтитры)',
           linkIdYoutube: 'vnFSu_rcxUs',
+          linkIdVimeo: ''
+        },
+        {
+          id: 4,
+          title: 'NASK - Psalm 152 new',
+          linkIdYoutube: 'nILGtOXiiyY',
+          linkIdVimeo: ''
+        },
+        {
+          id: 5,
+          title: 'NASK - Faith',
+          linkIdYoutube: 'PLE37oXBL5g',
           linkIdVimeo: ''
         }
       ]

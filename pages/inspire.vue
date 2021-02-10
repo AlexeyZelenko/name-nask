@@ -82,11 +82,18 @@ export default {
         treck: '/Prayer.mp3'
       },
       {
-        color: '#9018cc',
-        src: 'https://drive.google.com/uc?export=view&id=1XHYdN2q5KsKe6DLUsfTEb6bCnl6Wl5qB',
+        color: '#62307d',
+        src: 'https://drive.google.com/uc?export=view&id=1098v-Rsn3VMmczrCjel5z0pndnSQacg4',
         title: 'Psalm 152',
         artist: 'NASK',
         treck: '/nask3.mp3'
+      },
+      {
+        color: '#072555',
+        src: 'https://drive.google.com/uc?export=view&id=1-5HKo1HGCV2wt_LH48Y56tPGEGFdwSb4',
+        title: 'Faith',
+        artist: 'NASK',
+        treck: '/Faith.mp3'
       }
     ]
   })
