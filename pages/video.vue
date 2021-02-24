@@ -87,6 +87,12 @@ export default {
           title: 'NASK - Faith',
           linkIdYoutube: 'PLE37oXBL5g',
           linkIdVimeo: ''
+        },
+        {
+          id: 6,
+          title: 'NASK - MIX',
+          linkIdYoutube: '6Z4XkpPdsSw',
+          linkIdVimeo: ''
         }
       ]
     }
