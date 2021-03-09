@@ -95,7 +95,37 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-row
+        style="margin: 5px"
+        align="center"
+        justify="space-around"
+      >
+        &copy; {{ new Date().getFullYear() }}
+        <a
+          style="text-decoration: none"
+          href="https://www.instagram.com/nask_official/"
+        >
+          <v-icon
+            aria-hidden="true">mdi-instagram</v-icon>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://www.instagram.com/nask_official/"
+        >
+          <v-icon
+            aria-hidden="true">mdi-youtube</v-icon>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://jmlabel.one/nask"
+        >
+          <img
+            style="height: 36px; color: white"
+            src="@/assets/LogoBlk.png"
+            alt=""
+          >
+        </a>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
