@@ -152,6 +152,11 @@ export default {
           icon: 'mdi-video',
           title: 'Video',
           to: '/video'
+        },
+        {
+          icon: 'mdi-contacts',
+          title: 'Contact',
+          to: '/Contact'
         }
       ],
       items2: [
