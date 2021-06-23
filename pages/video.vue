@@ -18,18 +18,6 @@
                     class="mx-auto"
                     max-width="400"
                   >
-<!--                    <vue-plyr>-->
-<!--                      <div class="plyr__video-embed">-->
-<!--                        <iframe-->
-<!--                          :src="`https://player.vimeo.com/video/${video.linkIdVimeo}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media`"-->
-<!--                          allowfullscreen-->
-<!--                          allowtransparency-->
-<!--                          allow="autoplay"-->
-<!--                        />-->
-<!--                      </div>-->
-<!--                    </vue-plyr>-->
-
-                    <!-- youtube iframe with progressive enhancement (extra queries after the url to optimize the embed) -->
                     <vue-plyr>
                       <div class="plyr__video-embed">
                         <iframe
@@ -37,7 +25,7 @@
                           allowfullscreen
                           allowtransparency
                           allow="autoplay"
-                        ></iframe>
+                        />
                       </div>
                     </vue-plyr>
 
@@ -92,6 +80,18 @@ export default {
           id: 6,
           title: 'NASK - MIX',
           linkIdYoutube: '6Z4XkpPdsSw',
+          linkIdVimeo: ''
+        },
+        {
+          id: 7,
+          title: 'NASK - Evening of christian rap',
+          linkIdYoutube: 'fKJWZJuk30E',
+          linkIdVimeo: ''
+        },
+        {
+          id: 8,
+          title: 'NASK - recording studio#1',
+          linkIdYoutube: 'ySwwdRsTZKc',
           linkIdVimeo: ''
         }
       ]

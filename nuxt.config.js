@@ -24,7 +24,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '~/plugins/vue-plyr', mode: 'client' }
+    { src: '~/plugins/vue-plyr', mode: 'client' },
+    { src: '~/plugins/firebase.js' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -45,25 +46,6 @@ export default {
       {
         confirmButtonColor: '#41b882',
         cancelButtonColor: '#ff7674'
-      }
-    ],
-    [
-      '@nuxtjs/firebase',
-      {
-        config: {
-          apiKey: 'AIzaSyBc7u10MhozydZgZBd7NxcE6eD30HryL_U',
-          authDomain: 'nusk-9e136.firebaseapp.com',
-          projectId: 'nusk-9e136',
-          storageBucket: 'nusk-9e136.appspot.com',
-          messagingSenderId: '364628197447',
-          appId: '1:364628197447:web:a945a1b2198600ec81f162'
-        },
-        services: {
-          database: true,
-          storage: true,
-          firestore: true,
-          auth: true // Just as example. Can be any other service.
-        }
       }
     ]
   ],

@@ -53,13 +53,13 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
 
-<!--      Кнопка правого меню-->
-<!--      <v-btn-->
-<!--        icon-->
-<!--        @click.stop="rightDrawer = !rightDrawer"-->
-<!--      >-->
-<!--        <v-icon>mdi-menu</v-icon>-->
-<!--      </v-btn>-->
+      <!--      Кнопка правого меню-->
+      <!--      <v-btn-->
+      <!--        icon-->
+      <!--        @click.stop="rightDrawer = !rightDrawer"-->
+      <!--      >-->
+      <!--        <v-icon>mdi-menu</v-icon>-->
+      <!--      </v-btn>-->
     </v-app-bar>
     <v-main class="cover">
       <v-container>
@@ -106,14 +106,16 @@
           href="https://www.instagram.com/nask_official/"
         >
           <v-icon
-            aria-hidden="true">mdi-instagram</v-icon>
+            aria-hidden="true"
+          >mdi-instagram</v-icon>
         </a>
         <a
           style="text-decoration: none"
           href="https://www.instagram.com/nask_official/"
         >
           <v-icon
-            aria-hidden="true">mdi-youtube</v-icon>
+            aria-hidden="true"
+          >mdi-youtube</v-icon>
         </a>
         <a
           style="text-decoration: none"
@@ -121,7 +123,7 @@
         >
           <img
             style="height: 36px; color: white"
-            src="@/assets/LogoBlk.png"
+            src="~/assets/LogoBlk.png"
             alt=""
           >
         </a>

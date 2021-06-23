@@ -51,7 +51,7 @@
                     <source
                       :src="item.treck"
                       type="audio/mp3"
-                    />
+                    >
                   </audio>
                 </vue-plyr>
               </v-card>

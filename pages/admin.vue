@@ -2,14 +2,13 @@
   <div>
     <v-col cols="12">
       <v-file-input
+        v-model="File"
         accept="audio/mp3"
         color="deep-purple accent-4"
         counter
         multiple
         placeholder="Выберите файл"
         prepend-icon="mdi-bookmark-music"
-        v-model="File"
-
       >
         <template>
           <v-file-input
@@ -17,16 +16,15 @@
             label="File input"
             multiple
             show-size
-          ></v-file-input>
+          />
         </template>
-
       </v-file-input>
     </v-col>
     <v-btn
-      @click="addLocation(File)"
       color="blue darken-1"
       text
       type="submit"
+      @click="addLocation(File)"
     >
       Сохранить
     </v-btn>
@@ -37,7 +35,7 @@
 import Swal from 'sweetalert2'
 
 export default {
-  name: 'admin',
+  name: 'Admin',
   data () {
     return {
       File: []
@@ -45,7 +43,6 @@ export default {
   },
   methods: {
     async addLocation (File) {
-      console.log(File)
       Swal.fire({
         title: 'Идет загрузка...',
         imageUrl: '352.gif',
@@ -103,7 +100,6 @@ export default {
         showConfirmButton: false,
         timer: 2000
       })
-      // arrayImages = [];
       this.dialog = false
     }
   }
