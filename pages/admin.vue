@@ -1,5 +1,26 @@
 <template>
   <div>
+    <div>
+      <h2>
+        Write to Firestore.
+      </h2>
+      <div>
+        <button @click="writeToFirestore">
+          <span>Write now</span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2>
+        Read from Firestore.
+      </h2>
+      <div>
+        <button @click="readFromFirestore">
+          <span>Read now</span>
+        </button>
+      </div>
+      <p>SSR Rendered: {{ title }}</p>
+    </div>
     <v-col cols="12">
       <v-file-input
         v-model="File"
@@ -24,7 +45,7 @@
       color="blue darken-1"
       text
       type="submit"
-      @click="addLocation(File)"
+      @click="writeToFirestore(File)"
     >
       Сохранить
     </v-btn>
@@ -32,75 +53,50 @@
 </template>
 
 <script>
-import Swal from 'sweetalert2'
+import { doc, setDoc, getDoc } from 'firebase/firestore'
+import { db } from '~/plugins/firebase.js'
 
 export default {
   name: 'Admin',
+  // async fetch () {
+  //   const ref = doc(db, 'testCollection', 'testDoc')
+  //   try {
+  //     const document = await getDoc(ref)
+  //     this.title = document.data().text
+  //   } catch (e) {
+  //     console.error(e)
+  //   }
+  // },
   data () {
     return {
-      File: []
+      File: [],
+      title: null
     }
   },
   methods: {
-    async addLocation (File) {
-      Swal.fire({
-        title: 'Идет загрузка...',
-        imageUrl: '352.gif',
-        showConfirmButton: false
-      })
+    async writeToFirestore (File) {
+      console.log('File', File)
 
-      const promises = []
-      const promisesName = []
-
-      if (File) {
-        for (let i = 0; i < File.length; i++) {
-          // Создайте метаданные файла
-          const storageRef = this.$fireStorage.ref()
-          const metadata = {
-            contentType: 'audio/mp3'
-          }
-          const nameTime = +new Date() + '.mp3'
-
-          // Загрузить файл и метаданные в объект 'assets/images/***.jpg'
-          const uploadTask = storageRef.child(`voices/${nameTime}`).put(File[i], metadata)
-
-          promises.push(
-            uploadTask
-              .then(snapshot =>
-                snapshot.ref.getDownloadURL()
-              )
-          )
-          promisesName.push(
-            nameTime
-          )
-        }
+      const ref = doc(db, 'testCollection', 'testDoc')
+      const document = {
+        text: 'Firebase 9 rocks!'
       }
-
-      const URLs = await Promise.all(promises)
-      const NameImages = await Promise.all(promisesName)
-
-      const docRef = await this.$fireStore.collection('products').add({
-        NameImages,
-        arrayImages: URLs,
-        name
-      })
       try {
-        const docAdded = await docRef
-        await this.$fireStore.doc('products/' + `${docAdded.id}`).update({ id: `${docAdded.id}` })
-      } catch (err) {
-        return err
+        await setDoc(ref, document)
+        alert('Success!')
+      } catch (e) {
+        alert('Error!')
+        console.error(e)
       }
-
-      Swal.close()
-
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Ваша работа была сохранена',
-        showConfirmButton: false,
-        timer: 2000
-      })
-      this.dialog = false
+    },
+    async readFromFirestore () {
+      const ref = doc(db, 'testCollection', 'testDoc')
+      try {
+        const document = await getDoc(ref)
+        this.title = document.data().text
+      } catch (e) {
+        console.error(e)
+      }
     }
   }
 }

@@ -160,6 +160,11 @@ export default {
           title: 'Contact',
           to: '/Contact'
         }
+        // {
+        //   icon: 'mdi-admin',
+        //   title: 'admin',
+        //   to: '/admin'
+        // }
       ],
       items2: [
         {

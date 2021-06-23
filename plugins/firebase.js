@@ -1,4 +1,4 @@
-import { initializeApp, getApp } from 'firebase/app'
+import { initializeApp, getApps, getApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
@@ -9,6 +9,7 @@ const firebaseConfig = {
   messagingSenderId: '364628197447',
   appId: '1:364628197447:web:a945a1b2198600ec81f162'
 }
+getApps().length === 0 ? initializeApp(firebaseConfig) : getApp()
 let firebaseApp
 try {
   firebaseApp = getApp()
