@@ -16,5 +16,5 @@ try {
 } catch (e) {
   firebaseApp = initializeApp(firebaseConfig)
 }
-const db = getFirestore(firebaseApp, {})
+const db = getFirestore(firebaseApp)
 export { db }
